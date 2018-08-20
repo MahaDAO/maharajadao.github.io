@@ -1,5 +1,50 @@
 #page-home
   #hero1
     background: $primary-green
+    background-image: url(/dist/images/hero.jpg)
+    background-size: cover
     color: #FFF
     text-align: center
+    padding: 150px 0
+    font-weight: bold
+
+    .content
+      margin: 0 auto
+      line-height: 1.4
+      max-width: 400px
+      text-shadow: 0 2px 5px rgba(0, 0, 0 ,0.5)
+
+      .title-small
+        font-size: 20px
+      .title
+        font-size: 36px
+      .title-italic
+        font-size: 36px
+        font-style: italic
+        text-decoration: underline
+      .logo
+        width: 180px
+        margin: 30px 0
+
+    a.button-link
+      margin-top: 50px
+      display: block
+      button
+        background: $primary-red
+        border-radius: 3px
+        border: 0
+        box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.5)
+        color: #FFF
+        cursor: pointer
+        font-size: 14px
+        font-weight: bold
+        padding: 10px 20px
+
+  .content-diamond
+    padding-bottom: 80px
+    margin-top: -80px
+    background-color: #FFF
+    clip-path: polygon(0 0, 0 80px, 100% 100%)
+
+  #hero2
+    // background: blue

@@ -393,5 +393,44 @@ header#site-header {
 
 #page-home #hero1 {
   background: #4BA650;
+  background-image: url(/dist/images/hero.jpg);
+  background-size: cover;
   color: #FFF;
-  text-align: center; }
+  text-align: center;
+  padding: 150px 0;
+  font-weight: bold; }
+  #page-home #hero1 .content {
+    margin: 0 auto;
+    line-height: 1.4;
+    max-width: 400px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+    #page-home #hero1 .content .title-small {
+      font-size: 20px; }
+    #page-home #hero1 .content .title {
+      font-size: 36px; }
+    #page-home #hero1 .content .title-italic {
+      font-size: 36px;
+      font-style: italic;
+      text-decoration: underline; }
+    #page-home #hero1 .content .logo {
+      width: 180px;
+      margin: 30px 0; }
+  #page-home #hero1 a.button-link {
+    margin-top: 50px;
+    display: block; }
+    #page-home #hero1 a.button-link button {
+      background: #E91819;
+      border-radius: 3px;
+      border: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 20px; }
+
+#page-home .content-diamond {
+  padding-bottom: 80px;
+  margin-top: -80px;
+  background-color: #FFF;
+  clip-path: polygon(0 0, 0 80px, 100% 100%); }
