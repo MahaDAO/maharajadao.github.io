@@ -1,8 +1,6 @@
-header.site-header(role="banner")
+header#site-header
+  nav 
+    ul 
+      li
+        a(href="/") Home
   block header
-    a.site-logo(href="./")
-      span.site-logo-label= siteTitle
-      +symbol("logo")
-    button.drawer-trigger
-    .drawer
-      include ../partials/main-nav.pug

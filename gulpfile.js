@@ -144,7 +144,7 @@ gulp.task('pug-pages', function() {
 
 gulp.task('sass', function() {
 
-  return gulp.src('src/sass/site.scss')
+  return gulp.src('src/sass/site.sass')
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(dist + 'css'))
@@ -330,7 +330,7 @@ gulp.task('watch', function() {
   gulp.watch(['configuration.json', 'package.json'], ['reset', 'build']);
   gulp.watch(['src/pug/**/*.pug', '!src/pug/pages/**/*.pug'], ['pug']);
   gulp.watch('src/pug/pages/**/*.pug', ['pug-pages']);
-  gulp.watch('src/sass/**/*.scss', ['sass']);
+  gulp.watch('src/sass/**/*.sass', ['sass']);
   gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('src/images/**/*', ['images', 'gallery']);
   gulp.watch('src/svg/*', ['sprite']);

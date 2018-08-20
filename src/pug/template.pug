@@ -1,23 +1,9 @@
-include mixins/image.pug
-include mixins/gallery.pug
-include mixins/symbol.pug
-include mixins/section.pug
-
-block theme
-  - var themeName = ""
-
 doctype html
-html(
-  lang="en"
-  class=themeName
-)
+html(lang="en")
   include regions/head.pug
   body
-    a.skip-link(href="#site-main") Skip to main content
-    block sprite
-      figure.site-sprite(style="display: none;")
-        include ../../dist/svg/sprite.symbol.svg
     include regions/header.pug
+
     main.site-main#site-main(role="main")
       block content
     include regions/footer.pug
