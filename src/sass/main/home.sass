@@ -1,4 +1,17 @@
 #page-home
+  h1
+    font-weight: 800
+    margin-bottom: 10px
+
+  .content
+    padding: 0 15px
+
+  .hero
+    padding: 100px 0
+  .width-700
+    max-width: 700px
+    // padding: 1px
+
   #hero1
     background: $primary-green
     background-image: url(/dist/images/hero.jpg)
@@ -40,20 +53,38 @@
         font-weight: bold
         padding: 10px 20px
 
-  #hero1-diamond
-    padding-bottom: 80px
-    margin-top: -80px
-    background-color: #FFF
-    clip-path: polygon(0 0, 0 80px, 100% 100%)
-
   #hero2
-    max-width: 500px
-    margin: 15px auto
     line-height: 1.5
+    .content
+      margin: 0 auto 50px
     a
       color: blue
       border-bottom: 2px solid blue
 
 
-  #hero2
-    // background: blue
+  #hero3
+    padding: 80px 0
+    background: #FFEEDB
+
+  #hero4
+    padding: 80px 0
+
+  #hero5
+    background: #E6F2E7
+
+  .hero-diamond
+    padding-bottom: 80px
+    margin-top: -80px
+    background-color: #FFF
+    clip-path: polygon(0 0, 0 80px, 100% 100%)
+
+    &.reverse
+      clip-path: polygon(0 80px, 100% 0px, 100% 100%)
+
+    &#hero1-diamond, &#hero3-diamond
+      background-color: #FFF
+    &#hero2-diamond
+      background-color: #FFEEDB
+    &#hero4-diamond
+      margin-top: 0
+      background-color: #E6F2E7
