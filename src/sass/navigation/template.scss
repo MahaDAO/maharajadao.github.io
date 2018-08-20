@@ -1,0 +1,12 @@
+.template-nav {
+
+  &-group {}
+
+    &-item {}
+
+      &-link {
+
+        &:focus,
+        &:hover {}
+      }
+}
