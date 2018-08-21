@@ -2,6 +2,8 @@ extends ../template.pug
 
 block title
   - title = "India's First DAO for Blockchain Innovation"
+block description
+  - description = "The MaharajaDAO is a for-profit organization that is focused on promoting Blockchain innovation in India"
 
 block content
   #page-home
@@ -12,7 +14,7 @@ block content
         .title First DAO focused on Blockchain Innovation
         .title-italic in India
 
-        a.button-link(href="http://t.me/maharajadao" target="_blank")
+        a.button-link(href="#hero6")
           button Join the Raja
 
     #hero1-diamond.hero-diamond
@@ -22,9 +24,9 @@ block content
         .columns.medium-6
           h1 What is a DAO?
           .explain
-            | A DAO stands for a <a href="https://www.coindesk.com/information/what-is-a-dao-ethereum/" target="_blank">Decentralized Autonomus Organization</a>. It is a
-            | for-profit organization that is fully decentralized without any central authority in control.
-            | All the decisions are taken democratically, by the token holders of the DAO.
+            | A DAO stands for a <a href="https://www.coindesk.com/information/what-is-a-dao-ethereum/" target="_blank">Decentralized Autonomus Organization</a>. It's a
+            | <b>for-profit organization</b> that is fully decentralized without any central authority in control.
+            | All the decisions made are taken democratically amongst the share-holders of the DAO.
 
         .columns.medium-6
           //- b img goes here
@@ -35,20 +37,39 @@ block content
         .columns.medium-6.text-right
           h1 What will the MaharajaDAO do?
           .explain
-            | The MaharajaDao will support and promote DAOs and DApps that are specifically made in India.
+            | The MaharajaDao will specifically support and promote DAOs/DApps that are 100% made in India.
             br
             br
-            | By doing so, the MaharajaDao will help promote innovation and disruption in the country’s blockchain ecosystem.
+            | By doing so, the MaharajaDao will allow for investors to get a share in products created by
+            | blockchain entrepreneurs/developers in India, at a massive scale.
+
 
       .content.row
+        //- b img goes here
+        .columns.medium-6
+          h1 Why launch a DAO for India?
+          .explain
+            | Because in India the legality of cryptocurrencies is still not clear, which has made it very
+            | hard for entrepreneurs/developers to create blockchain-based products. If nothing is done,
+            | then this country will face a huge brain-drain in terms of blockchain talent.
+            br
+            br
+            | By creating a DAO, these entrepreneurs/developers know that they will always get support from the DAO,
+            | irresepective of the decision made by the RBI on cryptocurrencies.
+        .columns.medium-6
+
+
+      .content.row.text-right
+        .columns.medium-6
         .columns.medium-6
           h1 Can the MaharajaDAO ever be taken down?
           .explain
-            | No. No entity or individual (not even the creators) can take full control of the MaharajaDAO.
+            | No. All the power within the DAO is decentralized which means that no entity or individual (not even the creators) can take
+            | full control of the DAO.
             br
             br
-            | By having power decentralized, the MaharajaDAO is highly resistant to corruption.
-        .columns.medium-6
+            | This means that the MaharajaDAO is resistant to any attacks or corruption.
+        //- .columns.medium-6
           //- b img goes here
 
     #hero2-diamond.hero-diamond
@@ -56,8 +77,72 @@ block content
     #hero3.hero
       .content.row
         .columns.text-center
-          h1 The MAHA token
-          .pitch The MAHA token powers all the activity within the MaharajaDAO
+          h1 How will the MaharajaDAO work?
+          //- .pitch The MaharajaDAO works like how any public company works but with all the decisions made on the blockchain
+      .content.row
+        //- .columns.medium-6
+        .columns.medium-6
+          h2 1. Investors invest in the DAO
+          .explain
+            | By the means of an ICO, Investors put in money (Ether) into a DAO smart-contract
+            | that'll lock up the funds that'll then be invested into promising DAOs/DApps.
+
+      .content.row.text-right
+        .columns.medium-6
+        .columns.medium-6
+          h2 2. Developers/Entrepreneurs submit their projects for funding
+          .explain
+            | All submissions will happen with the DAO's smart contract.
+            br
+            br
+            | Projects that receive funding from the DAO need to emphasise that they'll
+            | their issue tokens to the MAHA token holders.
+
+        //- .columns.medium-6
+          //- b img goes here
+      .content.row
+        //- .columns.medium-6
+        .columns.medium-6
+          h2 3. Token holders vote on the most promising projects
+          .explain
+            | Once project submissions have been sent to the DAO, it'll then be analyzed by the MAHA token holders who'll then then analyze
+            | and vote whether or not to fund a project.
+            br
+            br
+            | Voting is done collectively in a decentralized fashion.
+
+        //- .columns.medium-6
+          //- b img goes here
+      .content.row.text-right
+        .columns.medium-6
+        .columns.medium-6
+          h2 4. Projects receive the funds
+          .explain
+            | If a project has been approved by the MAHA token holders, it then receives funds from the DAO through the means of
+            | a <a href="https://cointelegraph.com/explained/what-is-a-daico-explained" target="_blank">DAICO</a>.
+            br
+            br
+            | This ensures that the funds can always be refunded back to the DAO in case the project performs
+            | poorly.
+            br
+            br
+            | At the same time the project issues it's token to all MAHA token holders, proportionate to how much MAHA tokens
+            | they hold.
+        //- .columns.medium-6
+          //- b img goes here
+      .content.row
+        //- .columns.medium-6
+        .columns.medium-6
+          h2 5. MAHA Token holders profit from the most successful projects
+          .explain
+            | If a project becomes succesful, then the value of tokens given away to the MAHA token
+            | holders during the time of funding, rises in value.
+            br
+            br
+
+        //- .columns.medium-6
+          //- b img goes here
+
 
     #hero3-diamond.hero-diamond.reverse
 
@@ -65,24 +150,76 @@ block content
       .content.row
         .columns.text-center
           h1 DApps supported by the DAO
-          .pitch These are the list of DApps that are supported by DAO token holders
+          .pitch These are the list of DApps that are supported by MAHA token holders
 
-    #hero4-diamond.hero-diamond.reverse
+          .project
+            img(src="/dist/images/inrd.png")
+            h2.title INRD - INR Stablecoin
+            .description INRD is a decentralized stablecoin on the Ethereum blockchain that is always pegged to 1 INR.
+      //- .content.row
+        .columns.text-center
+          a.button-link(href="/about/token")
+            button Submit your DApp to the DAO
+
+    #hero4-diamond.hero-diamond
 
     #hero5.hero
       .content.row
         .columns.text-center
-          h1 Members of the DAO
-          .pitch since it's launch on August 2018, the MaharajaDAO continues to grow strong
+          h1 The MAHA token
+          .pitch The MAHA token powers all the activity within the MaharajaDAO
+      .content.row
+        .columns.medium-6
+          h3 What is the MAHA token?
+          .explain
+            | The MAHA token is an ERC20 token on the Ethereum blockchain that allows tokens holders to vote
+            | on various decisions made within the DAO.
+            //- br
+            //- br
+            //- | By having power decentralized, the MaharajaDAO is highly resistant to corruption.
+        .columns.medium-6
 
-    #hero5-diamond.hero-diamond
+      .content.row.text-right
+        .columns.medium-6
+        .columns.medium-6
+          h3 Where can I get MAHA tokens?
+          .explain
+            | The MAHA token has not yet launched, but it will be distributed in many ways to ensure that token holders are
+            | as decentralized as possible.
+            br
+            br
+            | You can easily buy MAHA token from an exchange (Like <a href="https://dex.maharajadao.com" target="_blank">MaharajaDAO's DEX</a>) or
+            | by earning them by becoming a part of the community and contributing to it's growth.
+            br
+            br
+            | The MaharajaDAO will eventually have an ICO to fund it's activities.
+      .content.row
+        //- .columns.medium-6
+        .columns.medium-6
+          h3 Why value MAHA tokens?
+          .explain
+            | The MAHA token not only represents voting power within the MaharajaDAO but it also receives
+            | tokens from invested projects which grows in value if the project becomes succesful.
+            br
+            br
+            | Which means the more MAHA tokens you have, the more voting power and rewards you get.
+
+
+      //- .content.row
+        .columns.text-center
+          a.button-link(href="/token")
+            button Get MAHA tokens
+    #hero5-diamond.hero-diamond.reverse
 
     #hero6.hero
       .content.row.width-700
         .columns.text-center
           h1 Join the voice for India. Let’s all be a part of something great!
-          .pitch everybody’s voice is heard. Becoming a part of the MaharajaDao is easy and here’s what you can do to join
-
+          .pitch Everybody’s voice is heard. Becoming a part of the MaharajaDao is easy and here’s what you can do to join
+          a.button-link(href="http://t.me/maharajadao")
+            button
+              i.fab.fa-telegram-plane
+              | &nbsp; Join our Telegram
 
 block footer
 

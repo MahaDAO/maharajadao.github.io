@@ -20,8 +20,25 @@ head
     content= description
   )
 
-
+  //- Fonts
+  link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet")
+  link(href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet")
   link(href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet")
+
+  //- Facebook Open Graph Meta Data
+  //- meta(property="og:url" content="")
+  //- meta(property="og:type" content="")
+  meta(property="og:title" content= title)
+  meta(property="og:description" content= description)
+  //- meta(property="og:image" content="")
+
+  //- Twitter Meta Data
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:site" content="maharajadao.com")
+  meta(name="twitter:creator" content="@cryptocontrolio")
+  meta(name="twitter:title" content= title)
+  meta(name="twitter:description" content= description)
+  //- meta(name="twitter:image" content="")
 
   mixin favicon(size)
     link(
